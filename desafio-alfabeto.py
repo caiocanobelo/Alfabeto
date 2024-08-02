@@ -7,16 +7,14 @@ letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 alfabeto = dict()
 aa = 0
 # ------------------------------------------------------------ #
-for a in range(len(letras)):
+for a in range(len(letras)):                                   # Adiciona uma chave no dicionário para cada letra da lista 'letras';
     if a == 0:
         aa = a + 1
-    alfabeto[aa] = letras[a]
+    alfabeto[aa] = letras[a]                                   # A cada laço, é adicionado uma letra do alfabeto para uma chave int crescente:
     aa += 1
 
-# print(alfabeto)            # print de teste
 
-
-def um_a_vinteseis():
+def um_a_vinteseis():                                          # Definição de uma função para retornar uma Booleana;
     return 1 <= valor <= 26
 
 while True:
@@ -28,9 +26,8 @@ while True:
             break
         except:
             print('ERRO. Digite um valor numérico de 1 a 26.')
-
-    '''for b in range(0, valor):'''
-
+            
+# SAÍDA DE VALOR
     for x in range(1, valor + 1):
         print(f'{alfabeto[x]}', end=', ')
     print()
