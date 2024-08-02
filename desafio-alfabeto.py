@@ -17,6 +17,7 @@ for a in range(len(letras)):                                   # Adiciona uma ch
 def um_a_vinteseis():                                          # Definição de uma função para retornar uma Booleana;
     return 1 <= valor <= 26
 
+# ------------------------------------------------------------ #
 while True:
 # ENTRADA DE VALOR
     while True:
